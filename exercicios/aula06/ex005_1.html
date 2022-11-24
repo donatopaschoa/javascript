@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + paragrafo.innerText) // Conteúdo de <p> SEM formatação
+        window.document.write('<br>')
+        window.document.write('Está escrito assim: ' + paragrafo.innerHTML) // Conteúdo de <p> COM formatação do HTML
+        paragrafo.style.color = 'red' // tb podemos alterar o estilo da cor
+    </script>
+</body>
+</html>
