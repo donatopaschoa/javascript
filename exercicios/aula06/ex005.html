@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        window.document.write('Olá mundo') // escreve diretamente na pág
+        window.document.write('<br>')
+        window.document.write(window.document.charset) // mostra qual o charset configurado
+        window.document.write('<br>')
+        window.document.write(window.document.URL) // mostra o caminho completo do arquivo ex005.html
+    </script>
+</body>
+</html>
