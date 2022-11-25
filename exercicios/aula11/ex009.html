@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua naturalidade</title>
+</head>
+<body>
+    Digite o país onde vc nasceu: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="consultar()"> <br>
+    <div id="res"></div>
+
+    <script>
+        function consultar() {
+            var pais = window.document.querySelector('input#txtpais')
+            var resultado = window.document.querySelector('div#res')
+
+            resultado.innerHTML = `Viveu em ${pais.value} <br>`
+
+            if (pais.value.toUpperCase() == 'BRASIL') {
+                resultado.innerHTML += `Você é <strong> Brasileiro </strong>`
+            } else {
+                resultado.innerHTML += 'Você é <strong> extrangeiro </strong>'
+            }
+
+        }
+    </script>
+</body>
+</html>
