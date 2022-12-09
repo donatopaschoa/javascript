@@ -11,7 +11,7 @@ function carregar() { // >> função chamada no HTML: "<body onload="carregar()"
     var hora = data.getHours() // >> resgatando a hr de acesso do objeto data
     msg.innerHTML = `Agora são ${hora} hr.` // >> Informando a hr de acesso p/ o usuário
 
-    //hora = 19 // >> teste
+    //  hora = 19 // >> teste
     // Apresentando uma cor de fundo e a imagem de acordo c/ a hr de acesso:
     if (hora >= 0 && hora < 12) {
         img.src='foto-manha.png' // >> caminho da imagem
