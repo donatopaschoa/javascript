@@ -15,6 +15,5 @@ function bhaskara() {
     res.innerHTML += `<strong>- 4 . ${a} </strong>`
     res.innerHTML += `<strong>. ${c}</strong><br>`
 
-    res.innerHTML += `O valor calculado foi <strong>&Delta; = </strong>`
-    res.innerHTML += `<strong>${(b**2 -4*a*c)}</strong>`
+    res.innerHTML += `O valor calculado foi <strong id='yel'>&Delta; = ${(b**2 -4*a*c)}</strong>`
 }
