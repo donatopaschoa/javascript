@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação do aluno</title>
+    <style>
+        input {
+            height: 40px;
+        }
+
+        strong#repr {
+            background-color: rgb(233, 157, 157);
+            color: red;
+        }
+
+        strong#rec {
+            color: orange;
+        }
+
+        strong#apro {
+            background-color: rgb(143, 232, 143);
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p><h1>Situação do aluno</h1></p>
+        <p><input type="button" value="Entrar com as notas" onclick="verificar()"></p>
+    </div>
+
+    <div id="res">Clique no botão acima para informas as notas do aluno.</div>
+    <script src="script.js"></script>
+</body>
+</html>
