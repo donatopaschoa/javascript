@@ -1,4 +1,4 @@
-import * as funcoesGerais from './funcoesGerais.js';
+import * as funcoesGerais from '.funcoesGerais.js';
 function formatar() {
     let n = Number(window.prompt('Digite um número inteiro'))
     let res = window.document.querySelector('div#res')
